@@ -24,7 +24,11 @@ RUN pip install --upgrade pip
 
 RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
-RUN pip install fastai jupyter matplotlib pandas duckduckgo_search
+RUN pip install fastai
+
+RUN pip install jupyter matplotlib pandas 
+
+RUN pip install -U duckduckgo_search==5.3.1b1
 
 RUN pip install nano
 
