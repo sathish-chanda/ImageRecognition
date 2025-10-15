@@ -34,8 +34,12 @@ RUN pip install nano
 
 RUN pip install nbdev
 
+RUN pip install gradio
+
 WORKDIR /workspace
 
 EXPOSE 8888
+
+EXPOSE 7860
 
 CMD ["jupyter","notebook","--ip=0.0.0.0","--port=8888","--allow-root","--no-browser"]

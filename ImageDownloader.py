@@ -13,7 +13,7 @@ import time
 def search_images(keywords,max_images = 200): 
     return L(DDGS().images(keywords,max_results = max_images)).itemgot('image')
 
-searches = ['horse', 'cat','ant']
+searches = ['dog','cat']
 
 path = Path('images')
 
