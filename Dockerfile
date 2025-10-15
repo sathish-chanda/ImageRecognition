@@ -32,6 +32,8 @@ RUN pip install -U duckduckgo_search==5.3.1b1
 
 RUN pip install nano
 
+RUN pip install nbdev
+
 WORKDIR /workspace
 
 EXPOSE 8888
